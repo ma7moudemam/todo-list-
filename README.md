@@ -37,7 +37,7 @@ Your users should be able to:
 
 ### Links
 
-- Live Site URL: [Github Pages](https://rock-paper-scissors-game-9d25d.web.app/)
+- Live Site URL: [Github Pages](https://todo-list-56d1f.web.app/)
 
 
 ## Author
