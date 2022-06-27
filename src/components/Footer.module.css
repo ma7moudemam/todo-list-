@@ -1,0 +1,52 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.footer p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: hsl(234, 11%, 52%);
+}
+
+.footer button{
+    font-size:1rem;
+    background-color: transparent;
+    border: none;
+    color: hsl(234, 11%, 52%);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.footer button:hover{
+    color: #fff;
+}
+
+.footer button.active{
+    color: hsl(220, 98%, 61%);
+}
+
+
+@media screen and (max-width: 480px) {
+   
+        .footer p{
+            font-size: 1rem;
+            width: 100px;
+        }
+
+        .footer button{
+            font-size: .9rem;
+        }
+
+    .actions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        font-size:1rem;
+    }
+}
+    

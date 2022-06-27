@@ -1,0 +1,87 @@
+.myform {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -200px;
+  
+}
+
+.createdTask {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myinput {
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-indent: 50px;
+  font-size: 20px;
+  
+}
+
+.createdTask button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid hsl(233, 14%, 35%);
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.createdTask button:hover{
+  border-color: hsl(220, 98%, 61%);
+}
+.dark{
+  background-color:  hsl(235, 24%, 19%);
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .myform {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -200px;
+  }
+
+  .myinput {
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-indent: 50px;
+    font-size: 20px;
+  }
+
+  .createdTask button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid hsl(233, 14%, 35%);
+    position: absolute;
+    left: 60px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}
+  

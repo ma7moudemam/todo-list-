@@ -1,0 +1,38 @@
+.header{
+    width: 100%;
+    height: 40vh;
+    background-image: url('./../assets/images/bg-desktop-dark.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innerHeader{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 500px;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+    top: -30px;
+}
+
+.innerHeader img{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px){
+    .header{
+        background-image: url('./../assets/images/bg-mobile-dark.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .innerHeader{
+        width: 80%;
+        top: -50px;
+    }
+}
+    

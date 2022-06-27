@@ -1,0 +1,50 @@
+.list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -270px;
+   
+}
+
+.mylist{
+    width:500px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-radius:5px;
+    outline: none;
+}
+
+.mylist li{
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid hsl(237, 14%, 26%);
+    background-color:transparent;
+    outline: none;
+}
+
+.dark{
+    background-color: hsl(235, 24%, 19%);
+    color: #fff;
+}
+.light{
+    background-color: #fff;
+    color: #000;
+}
+
+
+@media screen and (max-width: 480px){
+    .mylist{
+        width: 80%;
+    }
+    .mylist li{
+        width: 100%;
+    }
+    
+}

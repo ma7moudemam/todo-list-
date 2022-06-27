@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import {  useSelector } from 'react-redux';
+import CreateTodo from './components/CreateTodo';
+import TodoList from './components/TodoList';
+import classes from './App.module.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [listState , setListState] = useState('All');
+  const theme = useSelector(state => state.theme.theme);
+  const  myListState= useSelector(state => state.listState.listState);
+
+  useEffect(() => {
+    setListState(myListState);
+  }
+  , [myListState]);
+  
+  if(theme === 'dark') {
+    document.body.style.backgroundColor = 'hsl(235, 21%, 11%)';
+  }
+  if(theme === 'light') {
+    document.body.style.backgroundColor = 'hsl(235, 21%, 96%)';
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${classes.App}`}>
+        <Header/>
+        <CreateTodo/>
+        <TodoList listState={listState}/>
     </div>
   );
 }
